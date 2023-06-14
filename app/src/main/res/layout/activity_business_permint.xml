@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="236dp"
+    tools:layout_editor_absoluteY="320dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BusinessPermit">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="411dp"
+            android:layout_height="58dp"
+            android:background="#0359B6"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/titlelogo" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/bebas_neue"
+                android:gravity="center"
+                android:text="BARANGAY COMEMBO MOBILE APPLICATION"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="315dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="156dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.26"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select type of certificate you want to request" />
+
+            <RadioButton
+                android:id="@+id/rbBarangayClearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Barangay Clearance" />
+
+            <RadioButton
+                android:id="@+id/rbBusinessPermit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Business Permit" />
+
+            <RadioButton
+                android:id="@+id/rbCedula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cedula" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/bPermitBackbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custombtn5"
+            android:drawableLeft="@drawable/baseline_arrow_back_24"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="@+id/toolbar"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas_neue"
+            android:text="BARANGAY COMEMBO ONLINE \nDOCUMENT REQUEST SYSTEM"
+            android:textAlignment="center"
+            android:textColor="#132540"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.56" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Fill out the required information"
+            android:textColor="#928C8C"
+            app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <EditText
+            android:id="@+id/bp_dti"
+            android:layout_width="211dp"
+            android:layout_height="35sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:hint="DTI Number"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView26"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView26"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <EditText
+            android:id="@+id/bp_contract"
+            android:layout_width="210dp"
+            android:layout_height="35sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:hint="Contract of Lease"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/bp_dti"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bp_dti"
+            app:layout_constraintTop_toBottomOf="@+id/bp_dti" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Valid ID"
+            android:textColor="#928C8C"
+            app:layout_constraintEnd_toEndOf="@+id/bp_contract"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bp_contract"
+            app:layout_constraintTop_toBottomOf="@+id/bp_contract" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:text="  Attach a clear photo of your Valid ID."
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/textView27"
+            app:layout_constraintTop_toBottomOf="@+id/bp_contract" />
+
+        <Button
+            android:id="@+id/btnID"
+            android:layout_width="129dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custombtn4"
+            android:fontFamily="@font/montserrat"
+            android:text="Add photo"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/textView27"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnID"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/btnID"
+            app:layout_constraintTop_toBottomOf="@+id/btnID" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="If your business is NEW, you are REQUIRED
+            \nto attach a photo of your business."
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/btnBusiness"
+            android:layout_width="129dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/custombtn4"
+            android:fontFamily="@font/montserrat"
+            android:text="Add photo"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/textView43"
+            app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnID"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/btnBusiness"
+            app:layout_constraintTop_toBottomOf="@+id/btnBusiness" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:hint="month/day/year"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/etPurpose"
+            app:layout_constraintTop_toBottomOf="@+id/etPurpose" />
+
+        <EditText
+            android:id="@+id/etPurpose"
+            android:layout_width="210dp"
+            android:layout_height="35sp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+            android:text="Business Permit"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/imageView1"
+            app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="By clicking submit, I HEREBY CERTIFY that the \ninformation provided in this form is complete, true \nand correct to the best of my knowledge."
+            android:textColor="#928C8C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etDate" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="150dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/custombtn3"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

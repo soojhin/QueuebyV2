@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg">
+
+
+    <TextView
+        android:layout_width="385dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Detailed Information"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type of Certificate:"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/modalforms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Clearance"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Requested:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/modaldate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Apr 23, 2023"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="Status:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/modalstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Completed"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="                    The requested document has been picked \n                    up. Thank you!"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick-Up Date:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/modalpickupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  April 3, 2023, 2:00 PM "
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="italic"
+            android:text = "We urge you to come only on your scheduled date and time."
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="">
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Applicant's Details:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="382dp"
+            android:layout_height="50dp"
+            android:text="The details indicated below are the details that will appear on the document requested"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textSize="15sp"
+            android:textColor="#3BACF1">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Middle Initial"
+            android:textSize="15dp"
+            android:textColor="#3BACF1">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="125sp"
+            android:layout_height="35dp"
+            android:id="@+id/modalfirstname"
+            android:background="@drawable/etmodal"
+            android:clickable="false"
+            android:editable="false"
+            android:fontFamily="@font/montserrat"
+            android:inputType="none"
+            android:text="First Name"
+            android:textSize="15sp"></EditText>
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp">
+        </TextView>
+
+        <EditText
+            android:layout_width="125sp"
+            android:layout_height="35dp"
+            android:id="@+id/modalmiddleinitial"
+            android:background="@drawable/etmodal"
+            android:clickable="false"
+            android:editable="false"
+            android:fontFamily="@font/montserrat"
+            android:inputType="none"
+            android:text="M.I"
+            android:textSize="15sp"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:text="Last Name"
+            android:textColor="#3BACF1"
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:text="Suffix (Jr.,Sr.,III)"
+            android:textColor="#3BACF1"
+            android:textSize="15dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="125sp"
+            android:layout_height="35dp"
+            android:id="@+id/modallastname"
+            android:background="@drawable/etmodal"
+            android:clickable="false"
+            android:editable="false"
+            android:fontFamily="@font/montserrat"
+            android:inputType="none"
+            android:text="Last Name"
+            android:textSize="15dp"></EditText>
+        <TextView
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp">
+        </TextView>
+
+        <EditText
+            android:layout_width="125sp"
+            android:layout_height="35dp"
+            android:id="@+id/modalsuffix"
+            android:background="@drawable/etmodal"
+            android:clickable="false"
+            android:editable="false"
+            android:fontFamily="@font/montserrat"
+            android:inputType="none"
+            android:text="--"
+            android:textSize="15dp"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:text="Purpose "
+            android:textColor="#3BACF1"
+            android:textSize="15dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="35dp"
+            android:id="@+id/modalpurpose"
+            android:background="@drawable/etmodal"
+            android:clickable="false"
+            android:editable="false"
+            android:fontFamily="@font/montserrat"
+            android:inputType="none"
+            android:text="Purpose"
+            android:textSize="15dp"></EditText>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

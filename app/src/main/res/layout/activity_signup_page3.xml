@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="220dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SignupActivityPage3">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="411dp"
+            android:layout_height="58dp"
+            android:background="#0359B6"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/titlelogo" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/bebas_neue"
+                android:gravity="center"
+                android:text="BARANGAY COMEMBO MOBILE APPLICATION"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Please provide your information to us to assist you better"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="344dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Note: our complete name should match with the ID you are required to bring with you."
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat"
+            android:text="*Required fields"
+            android:textColor="#F24141"
+            android:textSize="9sp"
+
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <EditText
+            android:id="@+id/etFirstname"
+            android:layout_width="275dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint=" First Name*"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView16"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <EditText
+            android:id="@+id/etMiddlename"
+            android:layout_width="275dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint=" Middle Name"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/etFirstname"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etFirstname"
+            app:layout_constraintTop_toBottomOf="@+id/etFirstname" />
+
+        <EditText
+            android:id="@+id/etLastname"
+            android:layout_width="275dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint=" Last Name*"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/etMiddlename"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etMiddlename"
+            app:layout_constraintTop_toBottomOf="@+id/etMiddlename" />
+
+        <EditText
+            android:id="@+id/etSuffix"
+            android:layout_width="275dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint=" Suffix"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/etLastname"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/etLastname"
+            app:layout_constraintTop_toBottomOf="@+id/etLastname" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="126dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint=" Age*"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/etSuffix"
+            app:layout_constraintTop_toBottomOf="@+id/etSuffix" />
+
+        <EditText
+            android:id="@+id/etBirthplace"
+            android:layout_width="275dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint=" Birthplace*"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/etAge"
+            app:layout_constraintTop_toBottomOf="@+id/etAge" />
+
+        <TextView
+            android:id="@+id/as3_tvgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Gender*"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/etBirthplace"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etBirthplace"
+            app:layout_constraintTop_toBottomOf="@+id/etBirthplace" />
+
+        <EditText
+            android:id="@+id/etContactnumber"
+            android:layout_width="137dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="Contact Number*"
+            android:inputType="number"
+            android:maxLength="11"
+
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/etBirthplace"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/as3_tvgender"
+            app:layout_constraintTop_toBottomOf="@+id/as3_tvgender" />
+
+        <TextView
+            android:id="@+id/as3_tvaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Address*"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/radioGroup2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/radioGroup2"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+        <EditText
+            android:id="@+id/etStreet"
+            android:layout_width="275dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint=" House no. and street"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/as3_tvaddress"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/as3_tvaddress"
+            app:layout_constraintTop_toBottomOf="@+id/as3_tvaddress" />
+
+        <EditText
+            android:id="@+id/etasBarangay"
+            android:layout_width="275dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint=" Barangay"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/etStreet"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etStreet"
+            app:layout_constraintTop_toBottomOf="@+id/etStreet" />
+
+        <EditText
+            android:id="@+id/etasCity"
+            android:layout_width="275dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custombtn1"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint=" City"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/etasBarangay"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etasBarangay"
+            app:layout_constraintTop_toBottomOf="@+id/etasBarangay" />
+
+        <Button
+            android:id="@+id/asp3Nextbtn"
+            android:layout_width="93dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/custombtn3"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"
+            android:text="Next"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etasCity"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="249dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="@+id/toolbar"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:srcCompat="@drawable/bar2" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="96dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Verify \n Email"
+            android:textAlignment="center"
+            android:textColor="#928C8C"
+            android:textSize="8sp"
+
+            app:layout_constraintHorizontal_bias="0.265"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:text="Additional \n Information"
+            android:textAlignment="center"
+            android:textColor="#928C8C"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:text="Review your \n Details"
+            android:textAlignment="center"
+            android:textColor="#928C8C"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.811"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etBirthdate"
+            android:layout_width="126dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custombtn1"
+            android:clickable="true"
+            android:focusable="false"
+            android:fontFamily="@font/montserrat"
+            android:hint="Birthdate*"
+            android:inputType="none"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/etAge"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etSuffix"
+            app:layout_constraintTop_toBottomOf="@+id/etSuffix" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="116dp"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toEndOf="@+id/as3_tvgender"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/as3_tvgender"
+            app:layout_constraintTop_toBottomOf="@+id/as3_tvgender">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                />
+        </RadioGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

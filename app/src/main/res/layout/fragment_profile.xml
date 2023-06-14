@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="411dp"
+            android:layout_height="58dp"
+            android:background="#0359B6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/titlelogo" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/bebas_neue"
+                android:gravity="center"
+                android:text="BARANGAY COMEMBO MOBILE APPLICATION"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/pf_Firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat"
+            android:text="First Name:"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/ProfileView" />
+
+        <TextView
+            android:id="@+id/pf_Middlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Middle Name:"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.101"
+            app:layout_constraintStart_toEndOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Firstname" />
+
+        <TextView
+            android:id="@+id/pf_Lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Last Name:"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/pf_Middlename"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pf_Middlename"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Middlename" />
+
+        <TextView
+            android:id="@+id/pf_Suffix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Suffix"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/pf_Lastname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pf_Lastname"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Lastname" />
+
+        <TextView
+            android:id="@+id/pf_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat"
+            android:text="email"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/pf_Lastname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pf_Lastname"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Lastname" />
+
+        <TextView
+            android:id="@+id/pf_Birthdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Birthdate:"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/pf_email"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pf_email"
+            app:layout_constraintTop_toBottomOf="@+id/pf_email" />
+
+        <TextView
+            android:id="@+id/pf_Birthplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Birthplace:"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/pf_Age"
+            app:layout_constraintHorizontal_bias="0.065"
+            app:layout_constraintStart_toStartOf="@+id/pf_Age"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Age" />
+
+        <TextView
+            android:id="@+id/pf_Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Gender:"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/pf_Birthplace"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pf_Birthplace"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Birthplace" />
+
+        <TextView
+            android:id="@+id/pf_Contactnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Contact Number:"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/pf_Birthplace"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Gender" />
+
+        <TextView
+            android:id="@+id/textView68"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Address"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/pf_Contactnumber"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pf_Contactnumber"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Contactnumber" />
+
+        <TextView
+            android:id="@+id/pf_Street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Street:"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView68"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView68"
+            app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+        <TextView
+            android:id="@+id/pf_Barangay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Barangay:"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/pf_Street"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pf_Street"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Street" />
+
+        <TextView
+            android:id="@+id/pf_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat"
+            android:text="City:"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/pf_Barangay"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pf_Barangay"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Barangay" />
+
+        <TextView
+            android:id="@+id/pf_Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Age:"
+            android:textColor="#928C8C"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/pf_Birthdate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pf_Birthdate"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Birthdate" />
+
+        <Button
+            android:id="@+id/pf_Editprofile"
+            android:layout_width="413dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/custombtn8"
+            android:drawableEnd="@drawable/baseline_chevron_right_24"
+            android:fontFamily="@font/montserrat"
+            android:text="     Edit Profile"
+            android:textAlignment="textStart"
+            android:textColor="#132540"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.565"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pf_city" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="413dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/custombtn8"
+            android:drawableEnd="@drawable/baseline_logout_24"
+            android:fontFamily="@font/montserrat"
+            android:text="     Sign Out"
+            android:textAlignment="textStart"
+            android:textColor="#E1615C"
+            app:layout_constraintEnd_toEndOf="@+id/pf_Oppbtn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pf_Oppbtn"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Oppbtn" />
+
+        <Button
+            android:id="@+id/pf_Oppbtn"
+            android:layout_width="413dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custombtn8"
+            android:drawableEnd="@drawable/baseline_chevron_right_24"
+            android:fontFamily="@font/montserrat"
+            android:text="     Our Privacy Policy"
+            android:textAlignment="textStart"
+            android:textColor="#132540"
+            app:layout_constraintEnd_toEndOf="@id/pf_Changepassword"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pf_Changepassword"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Changepassword" />
+
+        <Button
+            android:id="@+id/pf_Changepassword"
+            android:layout_width="413dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custombtn8"
+            android:drawableEnd="@drawable/baseline_chevron_right_24"
+            android:fontFamily="@font/montserrat"
+            android:text="     Change Password"
+            android:textAlignment="textStart"
+            android:textColor="#132540"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/pf_Editprofile"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pf_Editprofile"
+            app:layout_constraintTop_toBottomOf="@+id/pf_Editprofile" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ProfileView"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/usercircle"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_overlay="true"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="@+id/toolbar"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat"
+            android:text="First Name:"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProfileView" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Middle Name:"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Last Name:"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Suffix:"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView59"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView59"
+            app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Email:"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView69"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView69"
+            app:layout_constraintTop_toBottomOf="@+id/textView69" />
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Birthdate:"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView17"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Birthplace:"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView72"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView72"
+            app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+        <TextView
+            android:id="@+id/textView74"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Gender:"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView73"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView73"
+            app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+        <TextView
+            android:id="@+id/textView75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Contact Number:"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView74"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView74"
+            app:layout_constraintTop_toBottomOf="@+id/textView74" />
+
+        <TextView
+            android:id="@+id/textView76"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Address"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView75"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView75"
+            app:layout_constraintTop_toBottomOf="@+id/textView75" />
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Street:"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView76"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="@+id/textView76"
+            app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Barangay:"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView77"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView77"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat"
+            android:text="City:"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView78"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView78"
+            app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+        <TextView
+            android:id="@+id/textView72"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Age:"
+            android:textColor="#0359B6"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView71"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView71"
+            app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+</ScrollView>
